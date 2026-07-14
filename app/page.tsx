@@ -100,6 +100,7 @@ export default function Home() {
             <a href="#preguntas">Preguntas</a>
           </nav>
           <a className="nav-cta" href={waLink(generalMessage)} target="_blank" rel="noreferrer">
+            <WhatsAppIcon />
             Consultar por WhatsApp
           </a>
         </div>
@@ -119,7 +120,7 @@ export default function Home() {
             <div className="hero-actions">
               <a className="button button-whatsapp" href={waLink(generalMessage)} target="_blank" rel="noreferrer">
                 <WhatsAppIcon />
-                Consultar ahora
+                <span className="whatsapp-copy"><strong>Consultar ahora</strong><small>Respuesta por WhatsApp</small></span>
               </a>
               <a className="button button-secondary" href="#servicios">Ver tipos de informe</a>
             </div>
@@ -300,7 +301,7 @@ export default function Home() {
           <div className="contact-block">
             <span>WhatsApp AutoCheck</span>
             <a className="phone-number" href={waLink(generalMessage)} target="_blank" rel="noreferrer">310 552 3591</a>
-            <a className="button button-whatsapp light-button" href={waLink(generalMessage)} target="_blank" rel="noreferrer"><WhatsAppIcon /> Abrir conversación</a>
+            <a className="button button-whatsapp light-button" href={waLink(generalMessage)} target="_blank" rel="noreferrer"><WhatsAppIcon /><span className="whatsapp-copy"><strong>Abrir conversación</strong><small>Atención directa por WhatsApp</small></span></a>
           </div>
         </div>
       </section>
