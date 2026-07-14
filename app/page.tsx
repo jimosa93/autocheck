@@ -67,7 +67,7 @@ function WhatsAppIcon() {
   return (
     <img
       className="whatsapp-icon"
-      src="/whatsapp-icon.webp"
+      src="/whatsapp-icon-flat.png"
       alt=""
       aria-hidden="true"
     />
