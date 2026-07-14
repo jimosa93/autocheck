@@ -63,6 +63,17 @@ function CheckIcon() {
   return <span className="check-icon" aria-hidden="true">✓</span>;
 }
 
+function WhatsAppIcon() {
+  return (
+    <img
+      className="whatsapp-icon"
+      src="/whatsapp-icon.webp"
+      alt=""
+      aria-hidden="true"
+    />
+  );
+}
+
 export default function Home() {
   const generalMessage =
     "Hola AutoCheck, quiero consultar el historial de un vehículo.";
@@ -107,7 +118,7 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <a className="button button-whatsapp" href={waLink(generalMessage)} target="_blank" rel="noreferrer">
-                <span className="wa-mark" aria-hidden="true">●</span>
+                <WhatsAppIcon />
                 Consultar ahora
               </a>
               <a className="button button-secondary" href="#servicios">Ver tipos de informe</a>
@@ -199,7 +210,6 @@ export default function Home() {
           <div className="plans-grid">
             {plans.map((plan) => (
               <article className={`plan-card ${plan.tone}${plan.featured ? " featured" : ""}`} id={`plan-${plan.name.toLowerCase()}`} key={plan.name}>
-                {plan.featured && <span className="popular-badge">REVISIÓN MÁS COMPLETA</span>}
                 <div className="plan-head">
                   <span className="level-tag">{plan.level}</span>
                   <h3>AutoCheck <strong>{plan.name}</strong></h3>
@@ -290,7 +300,7 @@ export default function Home() {
           <div className="contact-block">
             <span>WhatsApp AutoCheck</span>
             <a className="phone-number" href={waLink(generalMessage)} target="_blank" rel="noreferrer">310 552 3591</a>
-            <a className="button button-whatsapp light-button" href={waLink(generalMessage)} target="_blank" rel="noreferrer"><span className="wa-mark">●</span> Abrir conversación</a>
+            <a className="button button-whatsapp light-button" href={waLink(generalMessage)} target="_blank" rel="noreferrer"><WhatsAppIcon /> Abrir conversación</a>
           </div>
         </div>
       </section>
@@ -304,7 +314,7 @@ export default function Home() {
         <div className="container footer-bottom"><span>© 2026 AutoCheck. Todos los derechos reservados.</span><span>auto-check.co</span></div>
       </footer>
 
-      <a className="floating-whatsapp" href={waLink(generalMessage)} target="_blank" rel="noreferrer" aria-label="Contactar a AutoCheck por WhatsApp"><span>●</span><b>WhatsApp</b></a>
+      <a className="floating-whatsapp" href={waLink(generalMessage)} target="_blank" rel="noreferrer" aria-label="Contactar a AutoCheck por WhatsApp"><WhatsAppIcon /><b>WhatsApp</b></a>
     </main>
   );
 }
