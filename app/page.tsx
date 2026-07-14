@@ -267,10 +267,10 @@ export default function Home() {
             <p>Transformamos datos dispersos en señales útiles para ayudarte a comprar con mayor tranquilidad.</p>
           </div>
           <div className="value-grid">
-            <article><span>01</span><h3>Información confiable</h3><p>Consultas en fuentes y bases de datos disponibles para el nivel elegido.</p></article>
-            <article><span>02</span><h3>Lectura sencilla</h3><p>Un resumen ejecutivo que prioriza los hallazgos importantes.</p></article>
-            <article><span>03</span><h3>Análisis de riesgos</h3><p>Contexto profesional para que identifiques señales de alerta.</p></article>
-            <article><span>04</span><h3>Recomendaciones</h3><p>Próximos pasos claros para complementar tu decisión de compra.</p></article>
+            <article><h3>Información confiable</h3><p>Consultas en fuentes y bases de datos disponibles para el nivel elegido.</p></article>
+            <article><h3>Lectura sencilla</h3><p>Un resumen ejecutivo que prioriza los hallazgos importantes.</p></article>
+            <article><h3>Análisis de riesgos</h3><p>Contexto profesional para que identifiques señales de alerta.</p></article>
+            <article><h3>Recomendaciones</h3><p>Próximos pasos claros para complementar tu decisión de compra.</p></article>
           </div>
         </div>
       </section>

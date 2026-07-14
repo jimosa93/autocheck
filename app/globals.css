@@ -180,9 +180,10 @@ nav a:hover { color: var(--blue); }
 
 .value { background: white; }
 .value-grid { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid #e0e5ee; border-radius: 15px; overflow: hidden; }
-.value-grid article { min-height: 230px; padding: 31px 25px; border-right: 1px solid #e0e5ee; }
+.value-grid article { min-height: 210px; padding: 38px 25px 32px; position: relative; border-right: 1px solid #e0e5ee; transition: background .2s; }
 .value-grid article:last-child { border-right: 0; }
-.value-grid article > span { display: inline-block; margin-bottom: 40px; color: var(--blue); font-size: 11px; font-weight: 850; }
+.value-grid article::before { content: ""; width: 44px; height: 5px; margin-bottom: 29px; display: block; background: var(--blue); border-radius: 99px; }
+.value-grid article:hover { background: #f8faff; }
 .value-grid h3 { margin: 0 0 10px; color: var(--navy); font-size: 17px; }
 .value-grid p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
 
@@ -297,7 +298,6 @@ footer { padding: 54px 0 20px; background: #fff; }
   .value-grid { grid-template-columns: 1fr; }
   .value-grid article { min-height: 190px; border-right: 0; border-bottom: 1px solid #e0e5ee; }
   .value-grid article:last-child { border-bottom: 0; }
-  .value-grid article > span { margin-bottom: 28px; }
   .faq-grid { gap: 25px; }
   .contact-block { padding: 27px 22px; }
   .phone-number { font-size: 40px; }
