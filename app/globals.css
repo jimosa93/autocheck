@@ -65,6 +65,7 @@ nav a:hover { color: var(--blue); }
 .button-secondary:hover { box-shadow: 0 10px 22px rgba(9,35,91,.08); }
 .whatsapp-icon { width: 25px; height: 25px; flex: 0 0 25px; object-fit: contain; }
 .button-whatsapp .whatsapp-icon { width: 50px; height: 50px; flex-basis: 50px; padding: 4px; background: white; border: 2px solid #20b95a; border-radius: 50%; box-shadow: none; }
+.button-whatsapp .whatsapp-icon-white { width: 52px; height: 52px; flex-basis: 52px; padding: 0; background: transparent; border: 0; border-radius: 0; }
 .whatsapp-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; line-height: 1; }
 .whatsapp-copy strong { font-size: 17px; font-weight: 850; }
 .whatsapp-copy small { font-size: 10px; font-weight: 650; letter-spacing: .025em; opacity: .82; }

@@ -63,11 +63,11 @@ function CheckIcon() {
   return <span className="check-icon" aria-hidden="true">✓</span>;
 }
 
-function WhatsAppIcon() {
+function WhatsAppIcon({ white = false }: { white?: boolean }) {
   return (
     <img
-      className="whatsapp-icon"
-      src="/whatsapp-icon-flat.png"
+      className={`whatsapp-icon${white ? " whatsapp-icon-white" : ""}`}
+      src={white ? "/whatsapp-icon-white.png" : "/whatsapp-icon-flat.png"}
       alt=""
       aria-hidden="true"
     />
@@ -119,7 +119,7 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <a className="button button-whatsapp" href={waLink(generalMessage)} target="_blank" rel="noreferrer">
-                <WhatsAppIcon />
+                <WhatsAppIcon white />
                 <span className="whatsapp-copy"><strong>Consultar ahora</strong><small>Respuesta por WhatsApp</small></span>
               </a>
               <a className="button button-secondary" href="#servicios">Ver tipos de informe</a>
