@@ -27,7 +27,14 @@ export async function generateMetadata(): Promise<Metadata> {
       "informe vehicular",
     ],
     alternates: { canonical: "/" },
-    icons: { icon: "/logo-autocheck.png", shortcut: "/logo-autocheck.png" },
+    icons: {
+      icon: [
+        { url: "/favicon.ico" },
+        { url: "/favicon.png", type: "image/png", sizes: "512x512" },
+      ],
+      shortcut: "/favicon.ico",
+      apple: [{ url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" }],
+    },
     openGraph: {
       title: "AutoCheck | Decide mejor antes de comprar",
       description: "Conoce el historial del vehículo y recibe orientación profesional para entender cada hallazgo.",
