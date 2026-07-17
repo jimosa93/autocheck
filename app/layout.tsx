@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(baseUrl),
     title: "AutoCheck | Historial vehicular para comprar con confianza",
     description:
-      "Consulta antecedentes, siniestros, reclamaciones, riesgos y estado legal de un vehículo. Recibe tu informe AutoCheck por WhatsApp.",
+      "Consulta el historial de un vehículo y recibe interpretación profesional, recomendaciones y acompañamiento humano por WhatsApp.",
     keywords: [
       "historial vehicular",
       "consultar vehículo Colombia",
@@ -30,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
     icons: { icon: "/logo-autocheck.png", shortcut: "/logo-autocheck.png" },
     openGraph: {
       title: "AutoCheck | Decide mejor antes de comprar",
-      description: "Conoce el historial del vehículo y recibe un informe claro por WhatsApp.",
+      description: "Conoce el historial del vehículo y recibe orientación profesional para entender cada hallazgo.",
       url: baseUrl,
       siteName: "AutoCheck",
       locale: "es_CO",
@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: "AutoCheck | Decide mejor antes de comprar",
-      description: "Conoce el historial del vehículo y recibe un informe claro por WhatsApp.",
+      description: "Conoce el historial del vehículo y recibe orientación profesional para entender cada hallazgo.",
       images: [`${baseUrl}/og.png`],
     },
   };
