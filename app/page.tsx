@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import PlateHero from "./PlateHero";
 
 const whatsappBase = "https://wa.me/573105523591";
 
@@ -93,7 +93,7 @@ function WhatsAppIcon({ white = false }: { white?: boolean }) {
   );
 }
 
-export default function Home({ proposalHero }: { proposalHero?: ReactNode } = {}) {
+export default function Home() {
   const generalMessage =
     "Hola AutoCheck, quiero consultar el historial de un vehículo.";
 
@@ -125,70 +125,7 @@ export default function Home({ proposalHero }: { proposalHero?: ReactNode } = {}
         </div>
       </header>
 
-      {proposalHero ?? <section className="hero" id="inicio">
-        <div className="hero-glow hero-glow-one" />
-        <div className="hero-glow hero-glow-two" />
-        <div className="container hero-grid">
-          <div className="hero-copy">
-            <div className="eyebrow"><span /> Historial vehicular en Colombia</div>
-            <h1>Compra con información.<br /><em>No con incertidumbre.</em></h1>
-            <div className="hero-body">
-              <p>Antes de invertir en un vehículo usado, conoce su historial y recibe la orientación de un profesional para interpretar cada hallazgo.</p>
-              <p>En AutoCheck analizamos información proveniente de diferentes fuentes públicas y privadas para ayudarte a identificar riesgos, antecedentes y alertas que podrían afectar tu compra.</p>
-            </div>
-            <div className="hero-difference">
-              <strong>Porque recibir un PDF es fácil.</strong>
-              <span>Lo importante es saber qué significa.</span>
-            </div>
-            <div className="hero-actions">
-              <a className="button button-whatsapp" href={waLink(generalMessage)} target="_blank" rel="noreferrer">
-                <WhatsAppIcon white />
-                <span className="whatsapp-copy"><strong>Consultar ahora</strong><small>Respuesta por WhatsApp</small></span>
-              </a>
-              <a className="button button-secondary" href="#servicios">Ver tipos de informe</a>
-            </div>
-            <div className="trust-row" aria-label="Beneficios">
-              <span><CheckIcon /> Fuentes verificadas</span>
-              <span><CheckIcon /> Interpretación profesional</span>
-              <span><CheckIcon /> Atención humana</span>
-            </div>
-          </div>
-
-          <div className="hero-visual" aria-label="Ejemplo visual de un informe AutoCheck">
-            <div className="report-card">
-              <div className="report-top">
-                <div>
-                  <span className="report-kicker">INFORME AUTOCHECK</span>
-                  <strong>Mucho más que un informe</strong>
-                </div>
-                <span className="verified-badge">✓ Verificado</span>
-              </div>
-              <div className="vehicle-line">
-                <div className="vehicle-avatar">AC</div>
-                <div>
-                  <strong>Revisado por personas</strong>
-                  <span>Hallazgos explicados con claridad</span>
-                </div>
-              </div>
-              <div className="report-score">
-                <div className="score-ring"><span>360°</span></div>
-                <div>
-                  <small>ANÁLISIS PROFESIONAL</small>
-                  <strong>Entiende lo que realmente importa</strong>
-                  <p>Destacamos lo que puede influir en tu decisión de compra.</p>
-                </div>
-              </div>
-              <div className="report-list">
-                <div><CheckIcon /><span>Historial de siniestros</span><b>Revisado</b></div>
-                <div><CheckIcon /><span>Reclamaciones y riesgos</span><b>Revisado</b></div>
-                <div><CheckIcon /><span>Orientación profesional</span><b>Incluida</b></div>
-              </div>
-            </div>
-            <div className="floating-pill floating-pill-one"><span>⚡</span> Entrega rápida</div>
-            <div className="floating-pill floating-pill-two"><span>✓</span> Respaldo profesional</div>
-          </div>
-        </div>
-      </section>}
+      <PlateHero />
 
       <section className="differentiator section" aria-labelledby="differentiator-title">
         <div className="container differentiator-grid">
