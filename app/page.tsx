@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 const whatsappBase = "https://wa.me/573105523591";
 
 const plans = [
@@ -91,7 +93,7 @@ function WhatsAppIcon({ white = false }: { white?: boolean }) {
   );
 }
 
-export default function Home() {
+export default function Home({ proposalHero }: { proposalHero?: ReactNode } = {}) {
   const generalMessage =
     "Hola AutoCheck, quiero consultar el historial de un vehículo.";
 
@@ -123,7 +125,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="hero" id="inicio">
+      {proposalHero ?? <section className="hero" id="inicio">
         <div className="hero-glow hero-glow-one" />
         <div className="hero-glow hero-glow-two" />
         <div className="container hero-grid">
@@ -186,7 +188,7 @@ export default function Home() {
             <div className="floating-pill floating-pill-two"><span>✓</span> Respaldo profesional</div>
           </div>
         </div>
-      </section>
+      </section>}
 
       <section className="differentiator section" aria-labelledby="differentiator-title">
         <div className="container differentiator-grid">
