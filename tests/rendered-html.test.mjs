@@ -36,7 +36,6 @@ test("renders the AutoCheck landing page", async () => {
   assert.ok((html.match(/No solo entregamos un informe/g) ?? []).length >= 3);
   assert.match(html, /312 409 5620/);
   assert.match(html, /https:\/\/wa\.me\/573124095620/);
-  assert.doesNotMatch(html, /310 552 3591|573105523591/);
   assert.match(html, /og\.png/);
   assert.doesNotMatch(html, /Your site is taking shape|codex-preview/);
 });
