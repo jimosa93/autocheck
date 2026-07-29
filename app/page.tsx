@@ -1,6 +1,6 @@
 import PlateHero from "./PlateHero";
 
-const whatsappBase = "https://wa.me/573105523591";
+const whatsappBase = "https://wa.me/573124095620";
 
 const plans = [
   {
@@ -103,10 +103,23 @@ export default function Home() {
         <div className="container topbar-inner">
           <span>Informes claros, rápidos y confiables</span>
           <a href={waLink(generalMessage)} target="_blank" rel="noreferrer">
-            Atención por WhatsApp · 310 552 3591
+            Atención por WhatsApp · 312 409 5620
           </a>
         </div>
       </div>
+
+      <aside className="whatsapp-announcement" aria-label="Nuevo número de WhatsApp">
+        <div className="container whatsapp-announcement-inner">
+          <WhatsAppIcon />
+          <p>
+            <strong>¡Tenemos nuevo número de WhatsApp!</strong>
+            <span>Ahora puedes escribirnos al</span>
+          </p>
+          <a href={waLink(generalMessage)} target="_blank" rel="noreferrer">
+            312 409 5620
+          </a>
+        </div>
+      </aside>
 
       <header className="site-header">
         <div className="container nav-wrap">
@@ -375,7 +388,7 @@ export default function Home() {
           </div>
           <div className="contact-block">
             <span>WhatsApp AutoCheck</span>
-            <a className="phone-number" href={waLink(generalMessage)} target="_blank" rel="noreferrer">310 552 3591</a>
+            <a className="phone-number" href={waLink(generalMessage)} target="_blank" rel="noreferrer">312 409 5620</a>
             <a className="button button-whatsapp light-button" href={waLink(generalMessage)} target="_blank" rel="noreferrer"><WhatsAppIcon /><span className="whatsapp-copy"><strong>Abrir conversación</strong><small>Atención directa por WhatsApp</small></span></a>
           </div>
         </div>

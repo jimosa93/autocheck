@@ -33,6 +33,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .topbar { background: var(--navy); color: #dbe6ff; font-size: 12px; letter-spacing: .04em; }
 .topbar-inner { height: 34px; display: flex; justify-content: space-between; align-items: center; }
 .topbar a { color: white; font-weight: 700; }
+.whatsapp-announcement { padding: 12px 0; background: #eaf9f0; color: #075d35; border-bottom: 1px solid #bfe9cf; }
+.whatsapp-announcement-inner { display: flex; align-items: center; justify-content: center; gap: 13px; }
+.whatsapp-announcement .whatsapp-icon { width: 31px; height: 31px; flex-basis: 31px; }
+.whatsapp-announcement p { margin: 0; display: flex; align-items: baseline; gap: 7px; font-size: 14px; }
+.whatsapp-announcement p strong { font-weight: 850; }
+.whatsapp-announcement a { padding: 7px 12px; background: #128c4b; color: white; border-radius: 999px; font-size: 16px; font-weight: 850; letter-spacing: .02em; transition: background .2s, transform .2s; }
+.whatsapp-announcement a:hover { background: #087a3e; transform: translateY(-1px); }
 .site-header { background: rgba(255,255,255,.94); position: sticky; top: 0; z-index: 50; border-bottom: 1px solid rgba(11,34,79,.08); backdrop-filter: blur(15px); }
 .nav-wrap { height: 78px; display: flex; align-items: center; gap: 44px; }
 .brand { margin-right: auto; }
@@ -450,6 +457,14 @@ footer { padding: 54px 0 20px; background: #fff; }
 @media (max-width: 560px) {
   .container { width: min(100% - 28px, 1180px); }
   .topbar { font-size: 10px; }
+  .topbar-inner > span { display: none; }
+  .topbar-inner { justify-content: center; }
+  .whatsapp-announcement { padding: 11px 0; }
+  .whatsapp-announcement-inner { gap: 9px; flex-wrap: wrap; text-align: center; }
+  .whatsapp-announcement .whatsapp-icon { width: 27px; height: 27px; flex-basis: 27px; }
+  .whatsapp-announcement p { display: block; font-size: 12px; line-height: 1.35; }
+  .whatsapp-announcement p strong { display: block; }
+  .whatsapp-announcement a { padding: 6px 10px; font-size: 14px; }
   .site-header { position: relative; }
   .nav-wrap { height: 65px; }
   .brand img { width: 165px; }

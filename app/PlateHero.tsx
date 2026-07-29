@@ -2,7 +2,7 @@
 
 import { FormEvent, useState } from "react";
 
-const whatsappBase = "https://wa.me/573105523591";
+const whatsappBase = "https://wa.me/573124095620";
 
 export default function PlateHero() {
   const [plate, setPlate] = useState("");

@@ -34,4 +34,4 @@ No se requieren variables de entorno para esta versión.
 
 ## Contacto configurado
 
-Todos los botones abren WhatsApp en el número `+57 310 552 3591` con mensajes previamente diligenciados según el servicio seleccionado.
+Todos los botones abren WhatsApp en el número `+57 312 409 5620` con mensajes previamente diligenciados según el servicio seleccionado.
